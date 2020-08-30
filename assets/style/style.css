@@ -3,13 +3,13 @@
 	padding: 0px;
 
 	font-size: 60%;
-	
+
 }
 
 .container {
 	width: 100vw;
 	height: 100vh;
-	background: tomato;
+	background-color: tomato;
 }
 
 .flex {
@@ -46,7 +46,7 @@
 }
 
 .logoImg img{
-	width: 100%;
+	width: 90%;
 }
 
 .about {
@@ -78,7 +78,8 @@
 
 @media (min-width: 820px){
 	.container{
-		max-width: 100%;
+		width: 100vw;
+		height: 100vh;
 	}
 	.flex {
 		display: grid;
@@ -90,7 +91,7 @@
 
 	.logo {
 		grid-area: logo;
-		width: 90%;
+		width: 100%;
 		text-align: justify;
 	}
 
