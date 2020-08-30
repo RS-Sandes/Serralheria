@@ -27,6 +27,7 @@
 	
 	margin-top: 6.4rem; 
 	text-align: center;
+	width: 90%;
 	
 }
 
@@ -45,7 +46,7 @@
 }
 
 .logoImg img{
-	width: 90%;
+	width: 100%;
 }
 
 .about {
@@ -89,6 +90,8 @@
 
 	.logo {
 		grid-area: logo;
+		width: 90%;
+		text-align: justify;
 	}
 
 	.logoImg {
@@ -102,6 +105,12 @@
 	.about {
 		padding: 3.2rem;
 		margin-left: 20rem;
+	}
+
+	.logo span{
+		color: white;
+		font:500 1.6rem Verdana;
+		text-align: justify;
 	}
 
 }
