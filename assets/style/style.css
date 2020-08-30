@@ -1,0 +1,107 @@
+* {
+	margin: 0px;
+	padding: 0px;
+
+	font-size: 60%;
+	
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	background: tomato;
+}
+
+.flex {
+	display: flex;
+	font-size: 3.2rem ;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+/*Logo*/
+
+.logo{
+	
+	margin-top: 6.4rem; 
+	text-align: center;
+	
+}
+
+.logo img {
+	width: 90%;
+	justify-content: center;
+	align-items: center;
+
+
+
+}
+
+.logo span{
+	color: white;
+	font:500 1.6rem Verdana;
+}
+
+.logoImg img{
+	width: 90%;
+}
+
+.about {
+	max-width: 16rem;
+	display: flex;	
+	padding: 1.2rem;
+	border-radius: 1.2rem; 
+	align-items: center;
+	background-color: #FF7F50;
+}
+
+.about:hover {
+	background-color: #E9967A;
+}
+
+.about a{
+	text-decoration: none;
+	color: white;
+	width: 100%;
+	font: 500 1.6rem Verdana;
+	
+}
+
+.about img{
+	color: white;
+	width: 6rem;
+}
+
+
+@media (min-width: 820px){
+	.container{
+		max-width: 100%;
+	}
+	.flex {
+		display: grid;
+		grid-template-areas: 
+		"logo Img Img"
+		"btn Img Img"
+	}
+
+
+	.logo {
+		grid-area: logo;
+	}
+
+	.logoImg {
+		grid-area: Img;
+	}
+
+	.about {
+		grid-area: btn;
+	}
+
+	.about {
+		padding: 3.2rem;
+		margin-left: 20rem;
+	}
+
+}

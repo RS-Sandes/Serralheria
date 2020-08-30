@@ -1,0 +1,50 @@
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+:root{
+    font-size: 60%;
+
+    --color-orange-prima: #FF8000;
+    --color-orange-second:  #FE9A2E;
+    --color-yellow-prima: #FFFF00;
+    --color-yellow-second:  #F7FE2E;
+    --color-blue-prima: #0000FF;
+    --color-blue-second:   #2E2EFE;
+    --color-gren-prima: #40FF00;
+    --color-gren-second:  #3ADF00;
+    --color-wine-prima: #5F04B4;
+
+}
+
+html, body, #root{
+    height: 100vh;
+}
+
+#root{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+    font: 500 1.6rem Roboto;
+}
+
+.container {
+    width: 90%;
+    max-width: 720px;
+}
+
+@media (min-width: 720px){
+    #root{
+        font-size: 82.5%;
+    }
+
+}
+
