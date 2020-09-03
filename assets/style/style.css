@@ -3,13 +3,17 @@
 	padding: 0px;
 
 	font-size: 60%;
+	
+}
 
+body {
+	background-color: tomato;
 }
 
 .container {
 	width: 100vw;
 	height: 100vh;
-	background-color: tomato;
+	background: tomato;
 }
 
 .flex {
@@ -27,7 +31,6 @@
 	
 	margin-top: 6.4rem; 
 	text-align: center;
-	width: 90%;
 	
 }
 
@@ -56,6 +59,7 @@
 	border-radius: 1.2rem; 
 	align-items: center;
 	background-color: #FF7F50;
+	cursor: pointer;
 }
 
 .about:hover {
@@ -78,8 +82,7 @@
 
 @media (min-width: 820px){
 	.container{
-		width: 100vw;
-		height: 100vh;
+		max-width: 100%;
 	}
 	.flex {
 		display: grid;
@@ -91,8 +94,6 @@
 
 	.logo {
 		grid-area: logo;
-		width: 100%;
-		text-align: justify;
 	}
 
 	.logoImg {
@@ -106,12 +107,6 @@
 	.about {
 		padding: 3.2rem;
 		margin-left: 20rem;
-	}
-
-	.logo span{
-		color: white;
-		font:500 1.6rem Verdana;
-		text-align: justify;
 	}
 
 }

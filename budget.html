@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>Trabalhos - Serralheria JJ</title>
+
+	<title>
+		Faça seu Orçamento! - Serralheria JJ
+	</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" type="text/css" href="./assets/style/styleAbout.css">
+	<link rel="stylesheet" type="text/css" href="./assets/style/styleBudget.css">
 
-	<link rel="stylesheet" type="text/css" href="./assets/style/styleSlide.css">
 </head>
 <body>
 	<header id="menu" class="menu">
@@ -23,32 +25,33 @@
 			</div>
 		</div>
 	</header>
-	<section class="body_slide">
-		
+
+	<section class="body">
 	
-	<div class="slide">
-		<div class="slide_back"></div>
-		<div class="slide_next"></div>
-		<div class="slide_packImages">
-			<div class="slide_item img"></div>
-			<div class="slide_item img1"></div>
-			<div class="slide_item img2"></div>
-			<div class="slide_item img3"></div>
-			<div class="slide_item img4"></div>
-			<div class="slide_item img5"></div>
-			<div class="slide_item img6"></div>
-			<div class="slide_item img7"></div>
-			<div class="slide_item img8"></div>
-			<div class="slide_item img9"></div>
-		</div>
-	</div>
+		<h1 class="tit">Faça Seu Orçamento:</h1>
+
+		<form class="form">
+			
+			<input class="input inp" type="text" name="Name" placeholder="Nome/Razão Social:">
+			
+			<input class="input inp1" type="email" name="Email" placeholder="Email:">
+			
+			<input class="input inp2 "type="text" name="Subject" placeholder="Assunto:">
+			
+
+			<textarea class="text" rows="10"  placeholder="Detalhes:"></textarea>
+
+			<input class="input sub" type="Submit" name="Send" value="Enviar">
+
+
+
+		</form>
+		<h2 class="tit">Ou, se preferir, Envie-nos uma Menssagem!</h2>
+		
+		<img class="imgW" onclick="wpp()" src="./assets/icons/icons8-whatsapp.svg" alt="Whatsapp">
+		
 
 	</section>
-
-	<script type="text/javascript" src="./assets/script/script.js">
-		
-
-	</script>
 
 	<footer class="rodape">
 
@@ -79,6 +82,12 @@
 	<p class="copyR">
 		By Sandes Tecnologia 2020
 	</p>
-	
+
+	<script type="text/javascript">
+			function wpp(){
+				location.href = "https://www.whatsapp.com"
+			}
+
+	</script>
 </body>
 </html>

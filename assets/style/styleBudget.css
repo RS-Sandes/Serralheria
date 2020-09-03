@@ -1,16 +1,22 @@
-* {
-	margin: 0px;
-	padding: 0px;
+*{
+	margin: 0;
+	padding: 0;
 
 	font-size: 60%;
+
 	box-sizing: border-box;
 }
+
+
+
 
 .menu {
 	
 	background: tomato;
-	
 	width: 100%;
+	
+
+
 
 }
 
@@ -21,6 +27,7 @@
 	align-items: center;
 	flex-direction: column;
 	max-height: 320px;
+	
 }
 
 .menu-container img{
@@ -33,15 +40,12 @@
 	font-size: 3.2rem;
 	text-decoration: none;
 	color: white;
-	margin: 1.1rem 1.1rem;
+	margin: 1rem 1rem;
 	padding: 0.6rem;
-	transition: linear border-bottom 2s;
+	border-radius: 2.4rem;
+	background-color: #FF7F50; 
 
-}
 
-.menu-container a.btn:hover {
-	border-bottom: 1px solid black;
-	
 }
 
 
@@ -51,9 +55,84 @@
 
 }
 
-/**/
-/**/
+.body {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	font-size: 2.4rem;
+	color: white;
+	background-color:#B22222;
 
+}
+
+.imgW {
+	margin: 2rem auto;
+	cursor: pointer;
+	
+}
+
+.tit {
+	font-size: 2.6rem;
+	text-align: center;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+
+}
+
+/*Form*/
+
+.form {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.input {
+	width: 50%;
+	padding: 2rem;
+	font-size: 1.2rem;
+	margin: 1rem;
+}
+
+.inp {
+	width: 50%;
+	font-size: 1.6rem;
+}
+
+.inp1{
+	width: 50%;
+	font-size: 1.6rem;
+}
+
+.inp2{
+	width: 50%;
+	font-size: 1.6rem;
+}
+
+.sub {
+	background-color: tomato;
+	color: white;
+	font-size: 1.6rem;
+	border:none;
+	border-radius: 1rem;
+	width: 50%;
+}
+
+.sub:hover {
+	background-color: #E9967A;
+}
+
+.text {
+	width: 53%;
+	padding: 2rem;
+	font-size: 1.4rem;
+	margin: 1rem;
+	border-radius: 1rem;
+	border:none;
+
+}
 
 /*Rodape*/
 
@@ -132,8 +211,6 @@
 	
 }
 
-
-
 @media (min-width: 500px){
 
 		.menu-container {
@@ -150,8 +227,119 @@
 			
 		}
 
+		/*Section*/
+
+		
+
+		/*Form*/
+		.form {
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+		}
+
+		.input {
+			width: 50%;
+			padding: 2rem;
+			font-size: 1.2rem;
+			margin: 1rem;
+		}
+
+		.sub {
+			background-color: tomato;
+			color: white;
+			font-size: 1.6rem;
+			border:none;
+			border-radius: 1rem;
+			width: 50%;
+		}
+
+		.sub:hover {
+			background-color: #E9967A;
+		}
+
+		.text {
+			width: 50%;
+			padding: 2rem;
+			font-size: 1.4rem;
+			margin: 1rem;
+			border-radius: 1rem;
+			border:none;
+
+		}
+
 
     @media (min-width: 960px){
+
+    	/**/
+    	.form {
+
+			display: grid;
+			grid-template-areas: 
+			"name email"
+			"subject subject"
+			"other other"
+			"btn btn";
+
+			
+			justify-content: center;
+			justify-items:center;
+			align-content: center;
+			align-items: center;
+
+
+		}
+
+
+		.input {
+			justify-content: space-between;
+			align-content: space-between;
+
+		}
+		
+		.inp {
+			grid-area: name;
+			padding: 2rem;
+			width: 95%;
+			font-size: 1.6rem;
+			
+		}
+
+		.inp1 {
+			grid-area: email;
+			padding: 2rem;
+			width: 95%;
+			font-size: 1.6rem;
+		}
+
+		.inp2 {
+			grid-area: subject;
+			width: 98%;
+			font-size: 1.6rem;
+		}
+
+		.sub {
+
+			grid-area: btn;
+			width: 98%;
+			font-size: 1.6rem;
+
+		}
+
+		.text {
+			grid-area: other;
+			width: 98%;
+			padding: 2rem;
+			font-size: 1.6rem;
+			margin: 1rem;
+			border-radius: 1rem;
+			border:none;
+
+		}
+    	/**/
+
 		.menu-container {
 			display: flex;
 			flex-direction: row;
@@ -173,11 +361,10 @@
 
 		}
 
-
 		/*Rodape */
 
 		.rodape {
-			margin-top: 35%;
+			
 			display: flex;
 			flex-direction: row;
 			

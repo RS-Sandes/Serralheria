@@ -1,0 +1,162 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color:#B22222;
+}
+
+/*galery*/
+
+
+.slide {
+
+	position: absolute;
+	top: 50%;
+	transform: translateY( -50%);
+	width: 100%;
+	height: 50%;
+	max-height: 28vw;
+	overflow: hidden;
+
+}
+
+.slide_packImages {
+	position: relative;
+	top: 50%;
+	transform: translatey(-50%);
+	width: 100%;
+	height: 100%;
+}
+
+.slide_item {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	transition: 1s all ease;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-radius: 0.5rem;
+}
+
+/*Itens*/
+
+.slide_item:nth-child(1){
+		left: 0;
+		z-index: 1;
+		transform: translateX(-100%) scale(.8);
+}
+
+.slide_item:nth-child(2){
+	left: 0;
+	z-index: 2;
+	transform: translateX(-50%) scale(.8);
+}
+
+.slide_item:nth-child(3){
+	left: 50%;
+	z-index: 4;
+	transform: translateX(-50%) scale(1);
+}
+
+.slide_item:nth-child(4){
+	left: 100%;
+	z-index: 2;
+	transform: translateX(-50%) scale(.8);
+}
+
+.slide_item:nth-child(n+5){
+	left: 100%;
+	z-index: 1;
+	transform: scale(.8);
+}
+
+/*Images/Itens*/
+
+.img {
+	background-image: url(../images/trab.jpg);
+}
+
+.img1 {
+	background-image: url(../images/trab1.jpg);
+}
+
+.img2 {
+	background-image: url(../images/trab2.jpg);
+}
+
+.img3 {
+	background-image: url(../images/trab3.jpg);
+}
+
+.img4 {
+	background-image: url(../images/trab4.jpg);
+}
+
+.img5 {
+	background-image: url(../images/trab5.jpg);
+}
+
+.img6 {
+	background-image: url(../images/trab6.jpg);
+}
+
+.img7 {
+	background-image: url(../images/trab7.jpg);
+}
+
+.img8 {
+	background-image: url(../images/trab8.jpg);
+}
+
+.img9 {
+	background-image: url(../images/trab9.jpg);
+}
+
+/*Buttons*/
+
+.slide_next,
+.slide_back {
+	position: absolute;
+	top: 25%;
+	z-index: 4;
+	width: 50%;
+	height: 100%;
+	transform: translateX(-50%) translateY(-50%) scale(.8);
+	cursor: pointer;
+}
+
+.slide_next {
+	left: 100%;
+}
+
+.slide_back{
+	left: 0;
+}
+
+/*Degradê*/
+
+.slide:before,
+.slide:after {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 20%;
+	height: 100%;
+	z-index: 3;
+}
+
+
+.slide:before {
+	left: 0;
+	background: linear-gradient(to right, rgba(178,34,34,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+.slide:after {
+	right:  0;
+	background: linear-gradient(to left, rgba(178,34,34,1) 0%, rgba(0,0,0,0) 100%);
+}
