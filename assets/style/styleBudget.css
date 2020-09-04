@@ -40,12 +40,15 @@
 	font-size: 3.2rem;
 	text-decoration: none;
 	color: white;
-	margin: 1rem 1rem;
+	margin: 1.1rem 1.1rem;
 	padding: 0.6rem;
-	border-radius: 2.4rem;
-	background-color: #FF7F50; 
+	transition: linear border-bottom 2s;
 
+}
 
+.menu-container a.btn:hover {
+	border-bottom: 1px solid black;
+	
 }
 
 
