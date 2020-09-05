@@ -19,11 +19,18 @@
 				<a href="index.html"><img src="./assets/images/serra.png"></a>
 			
 
-			<div class="links">
+			<div id="links" class="links">
 				<a href="./aboutUs.html" class="btn">Sobre</a>
 				<a href="./budget.html" class="btn">Orçamento</a>
 			</div>
 		</div>
+		<!-- Responsive--->
+
+		<div id="resp" class="resp" >
+			<img id="span" class="spn" onclick="mostrar()" src="./assets/icons/arrowDown.png">
+			<img id="span1" class="spn1" onclick="sumir()" src="./assets/icons/arrowUp.png">
+		</div>
+
 	</header>
 
 	<section class="body">
@@ -48,7 +55,7 @@
 		</form>
 		<h2 class="tit">Ou, se preferir, Envie-nos uma Menssagem!</h2>
 		
-		<img class="imgW" onclick="wpp()" src="./assets/icons/icons8-whatsapp.svg" alt="Whatsapp">
+		<img class="imgW" onclick="wpp()" src="./assets/icons/icons8-whatsapp.png" alt="Whatsapp">
 		
 
 	</section>
@@ -73,9 +80,9 @@
 
 			<h3>Redes Sociais</h3>
 
-			<img class="wpp" src="./assets/icons/icons8-whatsapp.svg">
+			<img class="wpp" src="./assets/icons/icons8-whatsapp.png">
 
-			<img class="face" src="./assets/icons/icons8-facebook.svg">
+			<img class="face" src="./assets/icons/icons8-facebook.png">
 
 		</div>
 	</footer>
@@ -88,6 +95,24 @@
 				location.href = "https://www.whatsapp.com"
 			}
 
+			let link = document.getElementById("links");
+			let span = document.getElementById("span");
+
+			let span1 = document.getElementById("span1");
+
+			function mostrar(){
+				link.style.display = "flex";
+				span.style.display = "none";
+				span1.style.display = "flex";
+			}
+
+			function sumir(){
+				link.style.display = "none";
+				span.style.display = "flex";
+				span1.style.display = "none";
+			}
+
+	
 	</script>
 </body>
 </html>

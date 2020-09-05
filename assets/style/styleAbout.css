@@ -46,12 +46,34 @@
 
 
 .links {
-	display: flex;
+	display: none;
 	flex-direction: column;
 
 }
 
 /**/
+
+/*display: */
+
+.resp {
+	width: 100%;
+	font-size: 2.6rem;
+	text-aling:center;
+	background-color: #FF7F50; 
+	display: flex;
+	justify-content: center;
+
+}
+
+.spn {
+	text-align: center;
+	cursor: pointer;
+}
+
+.spn1 {
+	display: none;
+	cursor: pointer;
+}
 /**/
 
 
@@ -149,7 +171,14 @@
 			justify-content: center;
 			
 		}
+		/*Display reposive*/
+		.resp {
+			
+			
+			display: none;
+			
 
+		}
 
     @media (min-width: 960px){
 		.menu-container {
