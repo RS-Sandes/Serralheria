@@ -62,7 +62,7 @@
 
 			<h3>Redes Sociais</h3>
 
-			<img class="wpp" src="./assets/icons/icons8-whatsapp.png">
+			<img class="wpp" onclick="wpp()" src="./assets/icons/icons8-whatsapp.png">
 
 			<img class="face" src="./assets/icons/icons8-facebook.png">
 
@@ -73,6 +73,9 @@
 	</p>
 
 	<script type="text/javascript">
+			function wpp(){
+				location.href = "https://wa.me/+557381075241/?text=Tenho%20interesses%20em%20seu%20trabalho."
+			}
 			let link = document.getElementById("links");
 			let span = document.getElementById("span");
 
